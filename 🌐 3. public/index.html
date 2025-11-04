@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmConnect – Farmer-Consumer Interface</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌾 FarmConnect – Farmer-Consumer Interface</h1>
+
+  <section id="farmer-section">
+    <h2>Add Product</h2>
+    <form id="productForm">
+      <input id="farmerName" placeholder="Farmer Name" required><br>
+      <input id="productName" placeholder="Product Name" required><br>
+      <input id="price" type="number" placeholder="Price per kg" required><br>
+      <input id="stock" type="number" placeholder="Available stock (kg)" required><br>
+      <input id="image" type="file" accept="image/*"><br>
+      <button type="submit">Add Product</button>
+    </form>
+  </section>
+
+  <hr>
+
+  <section id="consumer-section">
+    <h2>Available Products</h2>
+    <div id="products"></div>
+  </section>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
